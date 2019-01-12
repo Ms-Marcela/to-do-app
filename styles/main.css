@@ -1,0 +1,36 @@
+#headerTitle {
+  color: green;
+  margin: auto;
+}
+
+.labelCenter{
+  text-align: center;
+}
+
+#addToDoForm {
+  color: purple;
+  font-weight: bold;
+  }
+
+input {
+  border: 1px solid purple;
+  border-line: regular;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  border-color: purple;
+}
+
+.listPosition {
+  color: purple;
+  background-color: #eaffea;
+  float: center;
+}
+
+@media screen and (max-width: 1024px) {
+   header.mdl-layout__header {
+     display: flex;
+   }
+ }
