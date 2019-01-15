@@ -1,5 +1,5 @@
 function onReady() {
-  const toDos = [];
+  let toDos = [];
   const addToDoForm = document.getElementById('addToDoForm');
   let id = 0;
 
@@ -29,11 +29,11 @@ function onReady() {
       const checkbox = document.createElement('input');
       checkbox.type = "checkbox";
 
-      const deleteButton = document.createElement('button');
-      deleteButton.textContent = "Delete";
+      const deleteBtn = document.createElement('button');
+      deleteBtn.textContent = "Delete";
 
-      deleteButton.addEventListener('click', event => {
-        toDos = toDos.filter(function (item) {
+      deleteBtn.addEventListener('click', event => {
+        toDos = toDos.filter(function(item){
           return item.id !== toDo.id;
         })
 
@@ -44,9 +44,9 @@ function onReady() {
 
       toDoList.appendChild(newLi);
       newLi.appendChild(checkbox);
-      newLi.appendChild(deleteButton).style.float = "right";
-      deleteButton.style.margin = "3px 20px 0px 0px";
-      
+      newLi.appendChild(deleteBtn).style.float = "right";
+      deleteBtn.style.margin = "3px 20px 0px 0px";
+
     });
   }
 
